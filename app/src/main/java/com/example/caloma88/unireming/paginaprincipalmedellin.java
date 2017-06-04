@@ -13,7 +13,7 @@ public class paginaprincipalmedellin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_paginaprincipalmedellin);
 
-        WebView web= (WebView) findViewById(R.id.paginamedellinu    tat);
+        WebView web= (WebView) findViewById(R.id.paginamedellin);
         web.setWebViewClient(new paginaprincipalmedellin.MyWebViewClient());
         WebSettings settings= web.getSettings();
         settings.setJavaScriptEnabled(true);

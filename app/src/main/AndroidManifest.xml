@@ -25,7 +25,12 @@
         <activity android:name=".paginaprincipalmanizales" />
         <activity android:name=".PlataformaCorreo" />
         <activity android:name=".contactosmedellin" />
-        <activity android:name=".contactosmanizales"></activity>
+        <activity android:name=".contactosmanizales" />
+        <activity android:name=".especializaciones" />
+        <activity android:name=".grados" />
+        <activity android:name=".tecnologos" />
+        <activity android:name=".extension" />
+        <activity android:name=".grupos_de_estudio"></activity>
     </application>
 
 </manifest>

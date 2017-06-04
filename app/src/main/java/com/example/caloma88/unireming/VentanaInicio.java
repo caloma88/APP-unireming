@@ -1,11 +1,13 @@
 package com.example.caloma88.unireming;
 
 import android.content.Intent;
+import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 
 public class VentanaInicio extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
@@ -20,6 +22,7 @@ public class VentanaInicio extends AppCompatActivity implements AdapterView.OnIt
     String [] lista_plataformas = new String[] {"paltaformas" , "Q10" , "Moodle" , "correo estudiantil"};
     String [] lista_contactos = new String[] {"contactos" , "contacto Medellin" , "contacto Manizales"};
 
+    RadioGroup contenedor;
     Intent intent;
 
     @Override
@@ -41,6 +44,42 @@ public class VentanaInicio extends AppCompatActivity implements AdapterView.OnIt
         adapter_contactos = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, lista_contactos);
         contactos.setAdapter(adapter_contactos);
         contactos.setOnItemSelectedListener(this);
+
+        contenedor.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
+
+                if (checkedId == R.id.radioButton) {
+                    Intent intent= new Intent(getApplicationContext(), especializaciones.class);
+                    startActivity(intent);
+
+                }
+                if (checkedId == R.id.radioButton2) {
+
+                    Intent intent= new Intent(getApplicationContext(), grados.class);
+                    startActivity(intent);
+
+                }
+                if (checkedId == R.id.radioButton3) {
+
+                    Intent intent= new Intent(getApplicationContext(), tecnologos.class);
+                    startActivity(intent);
+
+                }
+                if (checkedId == R.id.radioButton4) {
+
+                    Intent intent= new Intent(getApplicationContext(), extension.class);
+                    startActivity(intent);
+
+                }
+                if (checkedId == R.id.radioButton5) {
+
+                    Intent intent= new Intent(getApplicationContext(), grupos_de_estudio.class);
+                    startActivity(intent);
+
+                }
+            }
+        });
     }
 
     @Override
