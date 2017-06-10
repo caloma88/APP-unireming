@@ -16,7 +16,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:weightSum="1">
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -57,9 +58,11 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="A continuacion puedes seleccionar alguno de los programas en el cual estas interesado y despues de esto te rediccionaremos a toda la informacion para que puedas conocer los detalles." />
+                android:layout_width="352dp"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="A continuacion puedes seleccionar alguno de los programas en el cual estas interesado y despues de esto te rediccionaremos a toda la informacion para que puedas conocer los detalles."
+                android:layout_weight="0.09" />
 
             <RadioGroup
                 android:id="@+id/radiogrupo"
@@ -109,7 +112,7 @@
             </RadioGroup>
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imageView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
@@ -117,7 +120,7 @@
                 app:layout_constraintHorizontal_bias="0.846"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:srcCompat="@drawable/download" />
+                app:srcCompat="@drawable/imagengris" />
 
         </LinearLayout>
 
