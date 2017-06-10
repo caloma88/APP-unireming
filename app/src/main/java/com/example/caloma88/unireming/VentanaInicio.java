@@ -30,6 +30,8 @@ public class VentanaInicio extends AppCompatActivity implements AdapterView.OnIt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ventana_inicio);
 
+        contenedor = (RadioGroup)findViewById(R.id.radiogrupo) ;
+
         pagina_principal = (Spinner) findViewById(R.id.spinner1);
         adapter_pagina_principal = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, lista_pagina_principal);
         pagina_principal.setAdapter(adapter_pagina_principal);
@@ -47,39 +49,42 @@ public class VentanaInicio extends AppCompatActivity implements AdapterView.OnIt
 
         contenedor.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
+
             public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
 
                 if (checkedId == R.id.radioButton) {
-                    Intent intent= new Intent(getApplicationContext(), especializaciones.class);
+                    Intent intent = new Intent(getApplicationContext(), especializaciones.class);
                     startActivity(intent);
 
                 }
                 if (checkedId == R.id.radioButton2) {
 
-                    Intent intent= new Intent(getApplicationContext(), grados.class);
+                    Intent intent = new Intent(getApplicationContext(), grados.class);
                     startActivity(intent);
 
                 }
                 if (checkedId == R.id.radioButton3) {
 
-                    Intent intent= new Intent(getApplicationContext(), tecnologos.class);
+                    Intent intent = new Intent(getApplicationContext(), tecnologos.class);
                     startActivity(intent);
 
                 }
                 if (checkedId == R.id.radioButton4) {
 
-                    Intent intent= new Intent(getApplicationContext(), extension.class);
+                    Intent intent = new Intent(getApplicationContext(), extension.class);
                     startActivity(intent);
 
                 }
                 if (checkedId == R.id.radioButton5) {
 
-                    Intent intent= new Intent(getApplicationContext(), grupos_de_estudio.class);
+                    Intent intent = new Intent(getApplicationContext(), grupos_de_estudio.class);
                     startActivity(intent);
+
 
                 }
             }
-        });
+            });
+
     }
 
     @Override
@@ -140,4 +145,6 @@ public class VentanaInicio extends AppCompatActivity implements AdapterView.OnIt
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
+
 }

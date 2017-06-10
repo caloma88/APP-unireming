@@ -9,109 +9,120 @@
     <ScrollView
         android:layout_width="368dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp">
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="26dp">
 
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/imageView3"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/download"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.846"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginRight="8dp" />
+            android:orientation="vertical">
 
-
-
-    <Spinner
-        android:id="@+id/spinner3"
-        android:layout_width="363dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="202dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.846"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="8dp" />
-
-        <Spinner
-            android:id="@+id/spinner2"
-            android:layout_width="364dp"
-            android:layout_height="44dp"
-            android:layout_marginRight="8dp"
-            app:layout_constraintRight_toRightOf="parent"
-            tools:layout_editor_absoluteY="209dp" />
-
-        <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="368dp"
-        android:layout_height="39dp"
-        android:layout_constrainHorizontal_bias="0.533"
-        app:layout_constraintLeft_toLeftOf="parent"
-        tools:layout_editor_absoluteY="159dp"
-        android:layout_marginLeft="8dp" />
-
-
-
-        <RadioGroup
-            android:id="@+id/radiogrupo"
-            android:layout_width="match_parent"
-            android:layout_height="119dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.533"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-
-            android:layout_weight="9.50">
-
-            <RadioButton
-                android:id="@+id/radioButton"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Especializaciones" />
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.846"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:srcCompat="@drawable/download" />
 
-            <RadioButton
-                android:id="@+id/radioButton2"
-                android:layout_width="wrap_content"
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="354dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="159dp" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="354dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="159dp" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="354dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="159dp" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Pregrado" />
+                android:text="A continuacion puedes seleccionar alguno de los programas en el cual estas interesado y despues de esto te rediccionaremos a toda la informacion para que puedas conocer los detalles." />
 
-            <RadioButton
-                android:id="@+id/radioButton3"
-                android:layout_width="wrap_content"
+            <RadioGroup
+                android:id="@+id/radiogrupo"
+                android:layout_width="match_parent"
+                android:layout_height="228dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.533"
+                app:layout_constraintLeft_toLeftOf="parent"
+
+                app:layout_constraintRight_toRightOf="parent">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Especializaciones" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pregrado" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tecnologias" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Extension" />
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Grupos de Estudio" />
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Tecnologias" />
-            <RadioButton
-                android:id="@+id/radioButton4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Extension" />
-            <RadioButton
-                android:id="@+id/radioButton5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Grupos de Estudio" />
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.846"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:srcCompat="@drawable/download" />
 
-        </RadioGroup>
-
-    </LinearLayout>
+        </LinearLayout>
 
 
-</ScrollView>
+    </ScrollView>
 
 
 </android.support.constraint.ConstraintLayout>
